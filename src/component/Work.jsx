@@ -1,6 +1,6 @@
 import React from 'react'
 import Ornamental from '../component/images/Ornamental.PNG'
-import Fade from 'react-reveal'
+import Fade from 'react-reveal/Fade'
 
 const Work = () => {
     return (
@@ -29,7 +29,7 @@ const Work = () => {
                         <p>This Project is an Ordering System with Online Transaction and Chatbot Solution. Open for Small Businesses who sells Ornamental plants and 
                             Customers that is fond on Buying Ornamental Plants
                         </p>
-                        <div className="w-full flex justify-center items-center mt-5">
+                        <div className="w-full flex justify-end items-center mt-10">
                             <a href="https://ornamentalplants-jdk.com/">
                                 <buttton className="bg-green-500 rounded p-2 cursor-pointer">Check Project</buttton>
                             </a>
