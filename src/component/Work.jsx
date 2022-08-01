@@ -31,12 +31,12 @@ const Work = () => {
                         </p>
                         <div className="w-full flex justify-end items-center mt-10">
                             <a href="https://ornamentalplants-jdk.com/">
-                                <buttton className="bg-green-500 rounded p-2 cursor-pointer">Check Project</buttton>
+                                <button className="bg-green-500 rounded p-2 cursor-pointer">Check Project</button>
                             </a>
                         </div>
                     </div>
                 </div>
-            </Fade>
+            </Fade> 
 
         </div>
     )

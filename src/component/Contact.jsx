@@ -1,12 +1,27 @@
-import React from 'react'
 import { FaLinkedin, FaPhoneAlt } from 'react-icons/fa'
 import { FiMail} from 'react-icons/fi'
-import Fade from 'react-reveal'
+import Fade from 'react-reveal/Fade'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_rsmocwd', 'template_hn2hxih', form.current, 'RghJNPgyEamxF-_y9')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset()
+    };
+
     return (
         <Fade up>
-            <div name="contact" className="w-full h-screen bg-slate-900 text-white">
+            <div name="contact" className="w-full h-screen sm:h-auto bg-slate-900 text-white">
 
                 {/* Content */}
                 <div className="w-[80%] h-[100%] m-auto grid grid-cols-2 sm:grid-cols-1 justify-center items-center">
@@ -29,19 +44,22 @@ const Contact = () => {
                     </div>
 
                     {/* Message Me */}
-                    <div className="flex justify-center items-center flex-col">
-                        <div className="w-[100%]" >
-                            <p className="mb-5 lg:text-3xl text-4xl">Contact me</p>
-                            <div className="flex justify-center flex-col">
-                                <input className="m-2 p-2 bg-transparent outline-none  border-b-2 hover:border-b-4 focus:border-rose-900" type="text" placeholder="Name" />
-                                <input className="m-2 p-2 bg-transparent outline-none border-b-2 hover:border-b-4 focus:border-rose-900" type="Email" placeholder="Email" />
-                                <input className="my-3 p-4 bg-transparent outline-none border-b-2 hover:border-b-4 focus:border-rose-900" type="text" placeholder="Type Message" />
-                            </div>
-                            <div className="flex justify-center">
-                                <button className="mt-5 p-3 bg-orange-500 rounded">Send Message</button>
+                    <form ref={form} onSubmit={sendEmail}>
+                        <div className="flex justify-center items-center flex-col mb-[20px]">
+                            <div className="w-[100%]" >
+                                <p className="mb-5 lg:text-3xl text-4xl">Contact me</p>
+                                <div className="flex justify-center flex-col">
+                                    <input className="m-2 p-2 bg-transparent outline-none  border-b-2 hover:border-b-4 focus:border-rose-900" type="text" name="userName" placeholder="Name*" />
+                                    <input className="m-2 p-2 bg-transparent outline-none border-b-2 hover:border-b-4 focus:border-rose-900" type="Email" name="email" placeholder="Email*" />
+                                    <input className="m-2 p-2 bg-transparent outline-none border-b-2 hover:border-b-4 focus:border-rose-900" type="text" name="subject" placeholder="Subject*" />
+                                    <textarea id="" cols="20" rows="5" className="rounded-[5px] p-3 text-black outline-none" name="message" placeholder="Message*"></textarea>
+                                </div>
+                                <div className="flex justify-center">
+                                    <input type="submit" className="mt-5 p-3 bg-orange-500 rounded cursor-pointer" placeholder="Submit"/>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
             </div>
