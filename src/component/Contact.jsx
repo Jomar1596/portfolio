@@ -27,7 +27,7 @@ const Contact = () => {
                 <div className="w-[80%] h-[100%] m-auto grid grid-cols-2 sm:grid-cols-1 justify-center items-center">
                     
                     {/* My Contacts */}
-                    <div className=" flex justify-center items-center flex-col">
+                    <div className=" flex justify-center items-center flex-col sm:mt-5">
                         <div className="flex flex-col gap-4">
                             <p className="text-6xl lg:text-4xl">Let's Build Together!</p>
                             <p className="text-4xl lg:text-2xl">Get in touch with me.</p>
@@ -45,17 +45,17 @@ const Contact = () => {
 
                     {/* Message Me */}
                     <form ref={form} onSubmit={sendEmail}>
-                        <div className="flex justify-center items-center flex-col mb-[20px]">
+                        <div className="flex justify-center items-center flex-col mb-[20px] mt-[20px]">
                             <div className="w-[100%]" >
                                 <p className="mb-5 lg:text-3xl text-4xl">Contact me</p>
                                 <div className="flex justify-center flex-col">
-                                    <input className="m-2 p-2 bg-transparent outline-none  border-b-2 hover:border-b-4 focus:border-rose-900" type="text" name="userName" placeholder="Name*" />
-                                    <input className="m-2 p-2 bg-transparent outline-none border-b-2 hover:border-b-4 focus:border-rose-900" type="Email" name="email" placeholder="Email*" />
-                                    <input className="m-2 p-2 bg-transparent outline-none border-b-2 hover:border-b-4 focus:border-rose-900" type="text" name="subject" placeholder="Subject*" />
-                                    <textarea id="" cols="20" rows="5" className="rounded-[5px] p-3 text-black outline-none" name="message" placeholder="Message*"></textarea>
+                                    <input required className="m-2 p-2 bg-transparent outline-none  border-b-2 hover:border-b-4 focus:border-rose-900" type="text" name="userName" placeholder="Name*" />
+                                    <input required className="m-2 p-2 bg-transparent outline-none border-b-2 hover:border-b-4 focus:border-rose-900" type="Email" name="email" placeholder="Email*" />
+                                    <input required className="m-2 p-2 bg-transparent outline-none border-b-2 hover:border-b-4 focus:border-rose-900" type="text" name="subject" placeholder="Subject*" />
+                                    <textarea required id="" cols="20" rows="5" className="rounded-[5px] p-3 text-black outline-none" name="message" placeholder="Message*"></textarea>
                                 </div>
                                 <div className="flex justify-center">
-                                    <input type="submit" className="mt-5 p-3 bg-orange-500 rounded cursor-pointer" placeholder="Submit"/>
+                                    <input type="submit" className="mt-5 px-6 py-2 bg-orange-500 rounded cursor-pointer" placeholder="Submit"/>
                                 </div>
                             </div>
                         </div>
