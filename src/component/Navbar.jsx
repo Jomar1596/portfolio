@@ -1,6 +1,8 @@
 import {useState} from 'react'
 import logo from '../component/images/JP.png'
+import Resume from './assets/Resume_Perante.pdf'
 import {FaBars, FaTimes, FaFacebook, FaGithub, FaLinkedin} from 'react-icons/fa'
+import {AiFillProfile} from 'react-icons/ai'
 import { Link } from 'react-scroll'
 
 
@@ -85,20 +87,25 @@ const Navbar = () => {
                     <div className="lg:hidden flex fixed flex-col top-[35%] left-0">
                         <ul>
                             <li className="w-[160px] h-[60px] flex justify-center items-center bg-blue-500 ml-[-100px] hover:ml-[-5px] duration-300">
-                                <a className="flex justify-between items-center w-[130px] text-gray-300" href="https://www.facebook.com/kenneth.perante">
+                                <a className="flex justify-between items-center w-[130px] text-gray-300" target="_blank" rel="noreferrer" href="https://www.facebook.com/kenneth.perante">
                                     Facebook <FaFacebook size={30}/>
                                 </a>
                             </li>
 
                             <li className="w-[160px] h-[60px] flex justify-center items-center bg-gray-600 ml-[-100px] hover:ml-[-5px] duration-300">
-                                <a className="flex justify-between items-center w-[130px] text-gray-300" href="https://github.com/Jomar1596">
+                                <a className="flex justify-between items-center w-[130px] text-gray-300" target="_blank" rel="noreferrer" href="https://github.com/Jomar1596">
                                     Github <FaGithub size={30}/>
                                 </a>
                             </li>
 
                             <li className="w-[160px] h-[60px] flex justify-center items-center bg-blue-600 ml-[-100px] hover:ml-[-5px] duration-300">
-                                <a className="flex justify-between items-center w-[130px] text-gray-300" href="https://www.linkedin.com/in/jomar-perante-239575243/">
+                                <a className="flex justify-between items-center w-[130px] text-gray-300" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jomar-perante-239575243/">
                                     Linkedin <FaLinkedin size={30}/>
+                                </a>
+                            </li>
+                            <li className="w-[160px] h-[60px] flex justify-center items-center bg-gray-500 ml-[-100px] hover:ml-[-5px] duration-300">
+                                <a className="flex justify-between items-center w-[130px] text-gray-300" href={Resume} target="_blank" rel="noreferrer">
+                                    Resume <AiFillProfile size={30}/>
                                 </a>
                             </li>
                         </ul>
