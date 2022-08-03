@@ -27,7 +27,7 @@ const About = () => {
                         <Fade duration={3000} right>
                             <div className="p-[1rem]">
                                 <p className="w-[70%] md:w-[100%] flex text-1xl md:text-[1rem]">
-                                    I am passionate in designing and building web applications. Striving to gain more experience and to learn something new about Web Developement. 
+                                    I am passionate in designing and building web applications. Striving to gain more experience and to learn something new about Web Development. 
                                 </p>
                             </div>
                         </Fade>
