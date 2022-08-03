@@ -12,7 +12,7 @@ const Experience = () => {
         <div name="experience" className="flex sm:flex-wrap justify-center items-center w-full min-h-screen bg-blue-50">
             {/* Title */}
             <Fade up>
-                <div className="ml-40 xl:ml-20 lg:ml-10 md:ml-5 py-10">
+                <div className="ml-40 xl:ml-20 lg:ml-10 md:ml-5 py-20">
                     <h1 className="text-4xl drop-shadow-md font-semibold">Experience:</h1>
                     <h1 className="text-2xl xl:text-[1rem] sm:w-[80%] sm:text-[1rem] text-gray-500">These are the technologies I usually work </h1>
                 </div>
