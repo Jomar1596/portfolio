@@ -90,7 +90,7 @@ const Work = () => {
                                     </p>
                                 </div>
                                 <div className="">
-                                    <a target="_blank" rel="noreferrer" href="https://jperante.vercel.app/">
+                                    <a target="_blank" rel="noreferrer" href="https://jperanteportfolio.vercel.app/">
                                         <button className="text-white font-semibold px-5 py-2 bg-blue-600">View Project</button>
                                     </a>
                                 </div>
