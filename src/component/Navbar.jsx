@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import logo from '../component/images/JP.png'
-import Resume from './assets/Resume_Perante.pdf'
+import Resume from './assets/Perante_Resume.pdf'
 import {FaBars, FaTimes, FaFacebook, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {AiFillProfile} from 'react-icons/ai'
 import { Link } from 'react-scroll'

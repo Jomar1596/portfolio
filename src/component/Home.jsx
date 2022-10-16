@@ -1,5 +1,5 @@
 import React from 'react'
-import Resume from './assets/Resume_Perante.pdf'
+import Resume from './assets/Perante_Resume.pdf'
 import Fade from 'react-reveal/Fade';
 
 const Home = () => {
