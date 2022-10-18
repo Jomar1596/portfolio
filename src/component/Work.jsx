@@ -1,10 +1,47 @@
 import React from 'react'
+// import { useState } from 'react'
 import Ornamental from '../component/images/ornamentalP.PNG'
 import portfolio from '../component/images/portfolio.PNG'
 import DailyDiscountAdmin from '../component/images/DailyDiscountAdmin.PNG'
 import Fade from 'react-reveal/Fade'
 
-const Work = () => {
+const Work = ({slides}) => {
+
+    // const [currentIndex, setCurrentIndex] = useState(0);
+
+    // const leftArrowStyle = {
+    //     position: "absolute",
+    //     top: "50%",
+    //     transform: "translate(0, -50%)",
+    //     left: "5%",
+    //     fontSize: "30px",
+    //     color: "#434343",
+    //     zIndex: 1,
+    //     cursor: "pointer"
+    // };
+    // const rightArrowStyle = {
+    //     position: "absolute",
+    //     top: "50%",
+    //     transform: "translate(0, -50%)",
+    //     right: "10%",
+    //     fontSize: "30px",
+    //     color: "#434343",
+    //     zIndex: 1,
+    //     cursor: "pointer"
+    // };
+
+    // const goToPrevious = () => {
+    //     const isFirstIndex = currentIndex === 0;
+    //     const newIndex = isFirstIndex ? slides.length - 1 : currentIndex - 1;
+    //     setCurrentIndex(newIndex);
+    // };
+
+    // const goToNext = () => {
+    //     const isLastIndex = currentIndex === slides.length - 1;
+    //     const newIndex = isLastIndex ? 0 : currentIndex + 1;
+    //     setCurrentIndex(newIndex);
+    // };
+
     return (
         <div name="work" className="w-full min-h-screen flex flex-col justify-center items-center bg-blue-50">
 
@@ -13,7 +50,7 @@ const Work = () => {
                     {/* Title */}
                     <div>
                         <h1 className="text-4xl font-semibold">My Projects</h1>
-                        <p className="text-2xl text-gray-700">Here are the projects I've develop while learning as Front-end Web Developer.</p>
+                        <p className="text-2xl text-gray-700">Here are the projects I've develop while learning as Web Developer.</p>
                     </div>
                 </Fade>
                 
@@ -25,8 +62,10 @@ const Work = () => {
                         {/* Ornamental Plants */}
                         <div className="flex gap-10 xl:flex-wrap">
                             {/* Image */}
-                            <div className="flex w-[30%] 2xl:w-[50%] xl:w-[100%] items-center justify-center">
-                                <img className="rounded-[20px] w-full xl:w-[70%] lg:w-[80%] md:w-full" src={Ornamental} alt="oranamental" />
+                            <div className="flex w-[30%] 2xl:w-[50%] xl:w-[100%] items-center justify-center relative">
+                                {/* <div style={leftArrowStyle} onClick={goToPrevious}>⟨</div>
+                                <div style={rightArrowStyle} onClick={goToNext}>⟩</div> */}
+                                <img className="rounded-[20px] w-full xl:w-[70%] h-[90%] lg:w-[80%] md:w-full" src={Ornamental} alt="oranamental" />
                             </div>
 
                             <div className="flex flex-col w-[70%] xl:w-full justify-center gap-5">

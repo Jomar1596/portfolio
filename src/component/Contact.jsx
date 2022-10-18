@@ -32,13 +32,13 @@ const Contact = () => {
                             <p className="text-6xl lg:text-4xl font-semibold">Let's Build Together!</p>
                             <p className="text-4xl lg:text-2xl">Get in touch with me.</p>
                             <div className="flex items-center gap-3">
-                                <FaPhoneAlt /><a href="/" className="text-1xl sm:text-1xl">09305707994</a>
+                                <FaPhoneAlt /><span className="text-1xl sm:text-1xl">09305707994</span>
                             </div>
                             <div className="flex items-center gap-3">
-                                <FiMail /><a href="/" className="text-1xl sm:text-1xl">jomarperante@gmail.com</a>
+                                <FiMail /><span className="text-1xl sm:text-1xl">jomarperante@gmail.com</span>
                             </div>
                             <div className="flex items-center gap-3">
-                            <FaLinkedin /><a href="/" className="text-1xl sm:text-1xl">Linkedin</a>
+                            <FaLinkedin /><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jomar-perante-239575243/" className="text-1xl sm:text-1xl">Linkedin</a>
                             </div>
                         </div>
                     </div>
