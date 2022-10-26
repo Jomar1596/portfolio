@@ -94,7 +94,7 @@ const Work = ({slides}) => {
                                     <a target="_blank" rel="noreferrer" href="https://ornamentalplants-online.preview-domain.com/">
                                         <button className="text-white font-semibold px-5 py-2 bg-green-600">View Project</button>
                                     </a>
-                                    <span className="ml-2 sm:text-[0.7rem] text-red-300">Alert: Expired Hosting</span>
+                                    {/* <span className="ml-2 sm:text-[0.7rem] text-red-300">Alert: Expired Hosting</span> */}
                                 </div>
                             </div>
                         </div>
